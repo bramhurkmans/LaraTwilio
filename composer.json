@@ -1,0 +1,22 @@
+{
+    "name": "spinnov/laratwilio",
+    "description": "Twilio wrapper package to use the Twilio SDK in Laravel.",
+    "require": {
+        "twilio/sdk": "^6.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spinnov\\LaraTwilio\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spinnov\\LaraTwilio\\LaraTwilioServiceProvider"
+            ],
+            "aliases": {
+                "LaraTwilio": "Spinnov\\LaraTwilio\\Facades\\LaraTwilio"
+            }
+        }
+    }
+}
