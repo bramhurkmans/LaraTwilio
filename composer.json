@@ -1,6 +1,7 @@
 {
     "name": "spinnov/laratwilio",
     "description": "Twilio wrapper package to use the Twilio SDK in Laravel.",
+    "license": "MIT",
     "require": {
         "twilio/sdk": "^6.16"
     },
