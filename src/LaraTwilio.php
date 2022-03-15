@@ -26,7 +26,7 @@ class LaraTwilio
 
     public function sendVerification(string $phone_number)
     {
-        return $this->client->verify->v2->services(config('laratwilio.verify_service_id')) //VAadeb912b3fe9027b325f32dc7a51a489
+        return $this->client->verify->v2->services(config('laratwilio.verify_service_id'))
         ->verifications
         ->create($phone_number,"sms");
     }
