@@ -35,8 +35,9 @@ class LaraTwilio
     {
         return $this->client->verify->v2->services(config('laratwilio.verify_service_id'))
         ->verificationChecks
-        ->create($code, // code
-                ["to" => $phone_number]
+        ->create(["to" => $phone_number,
+                  "code" => $code
+                 ]
         );
     }
 }
